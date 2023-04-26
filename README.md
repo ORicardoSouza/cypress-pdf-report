@@ -1,3 +1,9 @@
+  <a href="https://www.cypress.io">
+    <picture>
+      <img alt="Cypress Logo" src="https://docs.cypress.io/guides/overview/why-cypress">
+    </picture>    
+  </a>
+
 # cypress-pdf-report
 
 ### Configurando o cypress-pdf-report
@@ -34,10 +40,10 @@ Um exemplo de script NPM no seu arquivo package.json para executar o Cypress com
 ```json
 "scripts": {
   "test": "cypress run --reporter cypress-pdf-report",
-  "cypress:open": "cypress open"
+  "cypress:open": "cypress open",
+  "openPdf":"xdg-open cypress/reports/cypress-report.pdf"
 },
 ```
-
 ###  Resumo 
 Nesse exemplo irá configurar o cypress-pdf-report para gerar um relatório em PDF chamado "cypress-report.pdf" a partir dos arquivos HTML gerados pelo Cypress. 
 O relatório será salvo na pasta "cypress/reports" e o parâmetro "overwrite" é definido como falso para evitar a substituição de relatórios anteriores.
